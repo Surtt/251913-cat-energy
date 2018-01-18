@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexander Sergeev](https://up.htmlacademy.ru/adaptive/13/user/251913).
-* Наставник: `Алексей Попков`.
+* Наставник: [Алексей Попков](https://up.htmlacademy.ru/adaptive/13/user/111287).
 
 ---
 
