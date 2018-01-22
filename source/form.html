@@ -12,62 +12,86 @@
         <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Cat Energy">
         <img class="page-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
       </a>
+      <button class="nav-toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Имя:<sup>*</sup></label>
-        <input type="text" id="name" name="name" value="Барсик" required>
-        <label for="weight">Вес (кг):<sup>*</sup></label>
-        <input type="number" id="weight" name="weight" value="7" required>
-        <label for="age">Возраст (лет):</label>
-        <input type="number" id="age" name="age" value="7">
-        <input type="radio" id="lose-weight" name="lose-weight" checked>
-        <label for="lose-weight">Похудение</label>
-        <input type="radio" id="get-weight" name="get-weight">
-        <label for="get-weight">Набор массы</label>
-        <input type="radio" id="advice" name="advice">
-        <label for="advice">Набор массы</label>
-        <fieldset>
-          <legend>Контактные данные (владельца кота)</legend>
-          <label for="email">E-mail:<sup>*</sup></label>
-          <input type="email" id="email" name="email" value="Kuklachev@gmail.com" required>
-          <label for="phone">Телефон:<sup>*</sup></label>
-          <input type="tel" id="phone" name="phone" value="8(960)900-60-90" required>
-        </fieldset>
-        <fieldset>
-          <legend>Комментарий</legend>
-          <textarea name="comment" id="comment-field">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset>
-          <legend>Дополнительно</legend>
-          <input type="checkbox" id="sugar" name="sugar" checked>
-          <label for="sugar">Сахарозаменитель:</label>
-          <input type="checkbox" id="water" name="water">
-          <label for="water">Питьевая вода:</label>
-          <input type="checkbox" id="milk" name="milk">
-          <label for="milk">Молоко:</label>
-          <input type="checkbox" id="vitamins" name="vitamins">
-          <label for="vitamins">Витамины:</label>
-        </fieldset>
-        <button class="form__button button" href="#">Отправить заявку</button>
-        <p class="form__required-fields"><sup>*</sup> — Обязательные поля</p>
+    <main class="container">
+      <h1 class="container__title">Подбор программы</h1>
+      <p class="container__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="container__form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__row">
+          <label for="name">Имя:<sup>*</sup></label>
+          <input type="text" id="name" name="name" placeholder="Барсик" required>
+        </div>
+        <div class="form__row">
+          <label for="weight">Вес (кг):<sup>*</sup></label>
+          <input type="number" id="weight" name="weight" placeholder="7" required>
+        </div>
+        <div class="form__row">
+          <label for="age">Возраст (лет):</label>
+          <input type="number" id="age" name="age" placeholder="7">
+        </div>
+        <div class="form__row">
+          <input type="radio" id="lose-weight" name="lose-weight" checked>
+          <label for="lose-weight">Похудение</label>
+        </div>
+        <div class="form__row">
+          <input type="radio" id="get-weight" name="get-weight">
+          <label for="get-weight">Набор массы</label>
+        </div>
+        <div class="form__row">
+          <input type="radio" id="advice" name="advice">
+          <label for="advice">Не знаю (нужен ваш совет)</label>
+        </div>
+          <fieldset>
+            <legend>Контактные данные (владельца кота)</legend>
+            <div class="form__row">
+              <label for="email">E-mail:<sup>*</sup></label>
+              <input type="email" id="email" name="email" placeholder="Kuklachev@gmail.com" required>
+            </div>
+            <div class="form__row">
+              <label for="phone">Телефон:<sup>*</sup></label>
+              <input type="tel" id="phone" name="phone" placeholder="8(960)900-60-90" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Комментарий</legend>
+            <textarea name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Дополнительно</legend>
+            <div class="form__row">
+              <input type="checkbox" id="sugar" name="sugar" checked>
+              <label for="sugar">Сахарозаменитель</label>
+            </div>
+            <div class="form__row">
+              <input type="checkbox" id="water" name="water">
+              <label for="water">Питьевая вода</label>
+            </div>
+            <div class="form__row">
+              <input type="checkbox" id="milk" name="milk">
+              <label for="milk">Молоко</label>
+            </div>
+            <div class="form__row">
+              <input type="checkbox" id="vitamins" name="vitamins">
+              <label for="vitamins">Витамины</label>
+            </div>
+          </fieldset>
+          <button class="form__button--send" href="#">Отправить заявку</button>
+          <p class="form__required-fields"><sup>*</sup> — Обязательные поля</p>
       </form>
 
       <section class="contacts">
@@ -98,9 +122,8 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img class="copyright__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип академии">
         </div>
       </div>
     </footer>
   </body>
-  </html>
+</html>
