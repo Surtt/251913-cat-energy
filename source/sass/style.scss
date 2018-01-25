@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("..fonts/oswaldregular.woff");
+  src: url("..fonts/oswaldregular.woff2");
+  src: url("..fonts/oswaldmeduim.woff");
+  src: url("..fonts/oswaldmeduim.woff2");
+}
+
+@import "../container/container";
+@import "../container/container__title";
+@import "../container/container__description";
+@import "../button/button";
+@import "../global/common";
+@import "../services/services";
+@import "../services/services__list";
+@import "../services/services__item.scss";
