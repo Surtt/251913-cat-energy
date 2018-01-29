@@ -1,0 +1,16 @@
+.more__text {
+  padding: 0;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--small {
+    font-family: $font-base;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
