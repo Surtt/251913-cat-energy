@@ -1,3 +1,15 @@
 .product {
   border: 1px solid #ededed;
+
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-dark;
+  }
+
+  &__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 24px;
+  }
 }

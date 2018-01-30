@@ -1,4 +1,15 @@
 .form {
   margin-left: 20px;
   margin-right: 20px;
+
+  &__category {
+    border: 1px solid #ededed;
+  }
+
+  &__row {
+    color: $color-text-secondary;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

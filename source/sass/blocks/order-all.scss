@@ -7,5 +7,13 @@
   width: 280px;
   height: 289px;
 
-  background-image: url('../img/gift-photo-mobile@1x.jpg');
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  &__text {
+    font-family: $font-base;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
