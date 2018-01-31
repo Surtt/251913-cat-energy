@@ -1,0 +1,13 @@
+.live-example {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+
+  background-color: $color-light-grey;
+
+  &__text {
+    font-family: $font-base;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

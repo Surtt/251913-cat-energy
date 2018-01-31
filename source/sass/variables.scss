@@ -1,0 +1,16 @@
+$font-base: arial, tahoma, sans-serif;
+$font-cond: "Oswald", "Tahoma", sans-serif;
+
+$color-text: #444444;
+$color-text-secondary: #222222;
+$color-dark: #111111;
+$color-light-grey: #f2f2f2;
+
+$text-down: lighten(#111111, 71%);
+
+
+$button-bg: #67b737;
+$button-hover: #5daa2f;
+$button-active: #5daa2f;
+$button-color: desaturate(lighten(darken(#5daa2f, 4%), 25%), 5%);
+$button-color-grey: desaturate(lighten(darken(#444444, 6%), 55%), 4%);
