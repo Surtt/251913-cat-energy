@@ -1,4 +1,23 @@
 .catalog {
-  margin-left: 20px;
-  margin-right: 20px;
+
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & button {
+      @include button-desktop;
+    }
+  }
 }

@@ -8,6 +8,7 @@
   height: 289px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
 
   &__text {
     font-family: $font-base;
@@ -15,5 +16,19 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order-all {
+    width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-all {
+    width: 1220px;
+    margin: 0 auto;
   }
 }

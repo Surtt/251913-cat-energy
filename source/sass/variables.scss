@@ -14,3 +14,6 @@ $button-hover: #5daa2f;
 $button-active: #5daa2f;
 $button-color: desaturate(lighten(darken(#5daa2f, 4%), 25%), 5%);
 $button-color-grey: desaturate(lighten(darken(#444444, 6%), 55%), 4%);
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
