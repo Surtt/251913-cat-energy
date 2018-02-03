@@ -3,3 +3,28 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .properties-list {
+    & tbody {
+      display: flex;
+      flex-direction: column;
+      width: 249px;
+    }
+
+    & tr {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .properties-list {
+    & tbody {
+      display: flex;
+      flex-direction: column;
+      width: 169px;
+    }
+  }
+}

@@ -13,3 +13,41 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    &__row {
+      display: flex;
+
+      & input[type="text"] {
+        flex-grow: 1;
+      }
+
+      & input[type="number"] {
+        flex-grow: 1;
+      }
+
+      & input[type="email"] {
+        flex-grow: 1;
+      }
+
+      & input[type="tel"] {
+        flex-grow: 1;
+      }
+    }
+
+    &__category textarea {
+      width: 100%;
+    }
+
+    &__category legend {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__category label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

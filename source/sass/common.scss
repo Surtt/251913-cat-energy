@@ -1,7 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  width: 320px;
 
   font-family: $font-cond;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

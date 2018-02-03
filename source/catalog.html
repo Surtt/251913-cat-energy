@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -15,10 +16,10 @@
       <button class="nav-toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a>Каталог продукции</a>
           </li>
           <li class="site-list__item">
@@ -29,8 +30,9 @@
     </header>
 
     <main>
-      <section class="container catalog">
+      <section class="container">
         <h1 class="container__title">Каталог продукции</h1>
+        <div class="catalog">
         <div class="product">
           <div class="product__wrapper">
             <img class="product__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Фото продукта">
@@ -186,6 +188,7 @@
             <button class="button button--all">Показать все</button>
         </div>
         </section>
+      </div>
       </section>
       <section class="additional-products">
         <h3 class="additional-products__title">Дополнительные товары</h3>
