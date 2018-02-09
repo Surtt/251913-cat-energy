@@ -1,11 +1,26 @@
 .properties-list {
+  border-spacing: 0;
+  display: flex;
+
   font-family: $font-base;
   font-size: 12px;
   line-height: 16px;
+
+  & tbody {
+    flex-grow: 1;
+  }
+
+  & tr {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .properties-list {
+    font-size: 16px;
+    line-height: 16px;
+
     & tbody {
       display: flex;
       flex-direction: column;
@@ -15,6 +30,10 @@
     & tr {
       display: flex;
       justify-content: space-between;
+      padding-bottom: 10px;
+      padding-top: 12px;
+
+      border-bottom: 1px solid #cdcdcd;
     }
   }
 }

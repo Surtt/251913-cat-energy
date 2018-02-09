@@ -1,9 +1,38 @@
 .copyright {
+  margin: 0 auto;
+  width: 280px;
+  position: relative;
+
   &__link {
     font-family: $font-base;
     color: $color-text;
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+
+      width: 27px;
+      height: 34px;
+
+      background-image: url("../img/htmlacademy.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    margin: 0;
+    width: auto;
+
+    &__link {
+      margin-right: 50px;
+    }
   }
 }

@@ -3,6 +3,7 @@
   padding: 0;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 37px;
 
   &__amount {
     font-family: $font-base;
@@ -15,6 +16,12 @@
     margin-bottom: 15px;
 
     border-bottom: 1px solid #cdcdcd;
+
+    &:nth-child(2) {
+      padding-top: 15px;
+
+      border-top: 1px solid #cdcdcd;
+    }
   }
 
   &__name {
@@ -42,27 +49,112 @@
   }
 
   &__title {
-    margin-bottom: 15px;
-    padding-bottom: 35px;
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
 
     font-size: 24px;
     line-height: 24px;
 
-    border-bottom: 1px solid #cdcdcd;
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+
+      width: 53px;
+      height: 3px;
+      margin-left: 24px;
+
+      background-color: $button-bg;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .additional-products {
     width: 708px;
+    margin-bottom: 70px;
 
     &__title {
+      margin-left: 50px;
+      margin-bottom: 80px;
+
       font-size: 36px;
       line-height: 36px;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+
+        width: 28px;
+        height: 3px;
+        margin-left: -70px;
+
+        background-color: $button-bg;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+
+        width: 320px;
+        height: 3px;
+        margin-left: 40px;
+
+        background-color: $button-bg;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      padding-left: 36px;
+      padding-right: 36px;
+      margin-bottom: 0;
+
+      border: 1px solid #cdcdcd;
+      border-bottom: none;
+
+      &:nth-child(2) {
+        padding-top: 26px;
+      }
+
+      &:nth-last-child(1) {
+        border-bottom: 1px solid #cdcdcd;
+      }
+
+      & .button {
+        width: 100%;
+      }
     }
 
     &__name {
       font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__properties {
+      width: 50%;
+    }
+
+    &__amount {
+      text-align: right;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__price {
+      font-size: 16px;
       line-height: 20px;
     }
   }

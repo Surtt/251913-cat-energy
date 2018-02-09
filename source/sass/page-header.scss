@@ -1,38 +1,57 @@
 .page-header {
   padding: 0;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-top: 12px;
 
-  @media (min-width: $tablet-width) {
-    & {
-      display: flex;
-      justify-content: space-between;
-      width: 708px;
-      margin: 0 auto;
-      margin-top: 25px;
-      align-items: center;
-      margin-bottom: 60px;
+  &__wrapper {
+    position: relative;
+
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 25px;
+    align-items: center;
+    margin-bottom: 60px;
+
+    &__wrapper {
+      width: 195px;
+      margin: 0;
     }
 
     &__logo {
       height: 58px;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    & {
-      display: flex;
-      justify-content: space-between;
-      width: 1220px;
-      margin: 0 auto;
-      margin-top: 55px;
-      align-items: center;
-      margin-bottom: 113px;
-    }
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 55px;
+    align-items: center;
+    margin-bottom: 113px;
+  }
 
-    &__logo {
-      height: 59px;
-    }
+  &__logo {
+    height: 59px;
   }
 }

@@ -4,15 +4,35 @@
   border-bottom: 1px solid #ededed;
 
   &__text {
+    position: relative;
+
     padding: 0;
     margin: 0;
+    margin-bottom: 15px;
 
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
 
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -50px;
+      left: 50%;
+
+      margin-left: -15px;
+      width: 30px;
+      height: 30px;
+
+      background-image: url("../img/icon-plus-mobile.svg");
+
+    }
+
     &--small {
+      margin-bottom: 25px;
+
       font-family: $font-base;
       font-size: 12px;
       line-height: 16px;
@@ -21,8 +41,52 @@
   }
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-top: 75px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .more {
+    width: 322px;
+
+    background: none;
+    border: 1px solid #ededed;
+
+    &__text {
+      margin-bottom: 30px;
+
+      font-size: 20px;
+      line-height: 20px;
+
+      &--small {
+        padding-bottom: 90px;
+
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__wrapper {
+      align-items: center;
+      margin-top: 168px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more {
+    width: 243px;
+
+    &__wrapper {
+      width: 169px;
+      margin: 0 auto;
+      margin-top: 168px;
+    }
   }
 }

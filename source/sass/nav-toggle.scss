@@ -1,13 +1,53 @@
 .nav-toggle {
-  @media (min-width: $tablet-width) {
-    & {
-      display: none;
+  cursor: pointer;
+
+  &--opened {
+    top: 0;
+    right: 0;
+    left: auto;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../img/icon-close.svg");
     }
   }
 
-  @media (min-width: $desktop-width) {
-    & {
-      display: none;
+  &--closed {
+    top: 0;
+    right: 0;
+    left: auto;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      width: 24px;
+      height: 18px;
+
+      background-image: url("../img/icon-mobile-menu.svg");
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-toggle {
+    display: none;
   }
 }

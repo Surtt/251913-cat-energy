@@ -1,8 +1,15 @@
 .how-it-work {
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 42px;
+
+  &__title {
+    margin-bottom: 42px;
+  }
 
   &__list {
+    position: relative;
+
     padding: 0;
     margin: 0;
 
@@ -11,5 +18,294 @@
     font-family: $font-base;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    margin-left: 80px;
+    margin-bottom: 20px;
+
+    &--substance::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/advantage-leaf@1x.png");
+      background-position: 50% 50%;
+      background-color: $button-bg;
+      background-repeat: no-repeat;
+    }
+
+    &--powder::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/advantage-powder@1x.png");
+      background-position: 50% 50%;
+      background-color: $button-bg;
+      background-repeat: no-repeat;
+    }
+
+    &--food::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/advantage-dining@1x.png");
+      background-position: 50% 50%;
+      background-color: $button-bg;
+      background-repeat: no-repeat;
+    }
+
+    &--enjoy::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/advantage-clock@1x.png");
+      background-position: 50% 50%;
+      background-color: $button-bg;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .how-it-work {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 110px;
+    margin-bottom: 65px;
+
+    border-bottom: 1px solid #e6e6e6;
+
+    &__wrapper {
+      width: 708px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 75px;
+
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-top: 75px;
+      margin-bottom: 180px;
+      width: 245px;
+      flex-grow: 1;
+    }
+
+    &__item:nth-last-child(1), &__item:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+
+    &__description {
+      padding: 0;
+      margin: 0;
+      width: 245px;
+
+      font-size: 16px;
+      color: $color-text;
+      line-height: 24px;
+
+      &--substance::before {
+        content: "";
+
+        position: absolute;
+        top: -110px;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("http://placehold.it/80x80");
+        background-repeat: no-repeat;
+      }
+
+      &--substance::after {
+        content: "1";
+
+        position: absolute;
+        top: -16px;
+        right: 120px;
+        left: auto;
+
+        height: 228px;
+
+        font-size: 281px;
+        font-family: $font-cond;
+        color: $color-light-grey;
+
+        z-index: -1;
+      }
+
+      &--powder::before {
+        content: "";
+
+        position: absolute;
+        top: -110px;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("http://placehold.it/80x80");
+        background-repeat: no-repeat;
+      }
+
+      &--powder::after {
+        content: "2";
+
+        position: absolute;
+        top: -16px;
+        right: 120px;
+        left: auto;
+
+        height: 228px;
+
+        font-size: 281px;
+        font-family: $font-cond;
+        color: $color-light-grey;
+
+        z-index: -1;
+      }
+
+      &--food::before {
+        content: "";
+
+        position: absolute;
+        top: -110px;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("http://placehold.it/80x80");
+        background-repeat: no-repeat;
+      }
+
+      &--food::after {
+        content: "3";
+
+        position: absolute;
+        top: -16px;
+        right: 120px;
+        left: auto;
+
+        height: 228px;
+
+        font-size: 281px;
+        font-family: $font-cond;
+        color: $color-light-grey;
+
+        z-index: -1;
+      }
+
+      &--enjoy::before {
+        content: "";
+
+        position: absolute;
+        top: -110px;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        background-image: url("http://placehold.it/80x80");
+        background-repeat: no-repeat;
+      }
+
+      &--enjoy::after {
+        content: "4";
+
+        position: absolute;
+        top: -16px;
+        right: 120px;
+        left: auto;
+
+        height: 228px;
+
+        font-size: 281px;
+        font-family: $font-cond;
+        color: $color-light-grey;
+
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-it-work {
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    &__wrapper {
+      width: 1220px;
+    }
+
+    &__item {
+      margin-bottom: 155px;
+    }
+
+    &__title {
+      margin-bottom: 110px;
+    }
+
+    &__description {
+      &--substance::after {
+        right: 75px;
+      }
+
+      &--powder::after {
+        right: 75px;
+      }
+
+      &--food::after {
+        right: 75px;
+      }
+
+      &--enjoy::after {
+        right: 75px;
+      }
+    }
   }
 }

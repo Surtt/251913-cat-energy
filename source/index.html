@@ -9,11 +9,13 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Cat Energy">
-        <img class="page-header__logo-text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-      <button class="nav-toggle" type="button">Открыть меню</button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Cat Energy">
+          <img class="page-header__logo-text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+        <button class="nav-toggle nav-toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -52,44 +54,63 @@
         </ul>
       </section>
       <section class="how-it-work">
-        <h2 class="how-it-work__title title">Как это работает</h2>
-        <ul class="how-it-work__list">
-          <li class="how-it-work__item">
-            <p class="how-it-work__decription">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="how-it-work__item">
-            <p class="how-it-work__decription">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="how-it-work__item">
-            <p class="how-it-work__decription">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
-          </li>
-          <li class="how-it-work__item">
-            <p class="how-it-work__decription">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
+        <div class="how-it-work__wrapper">
+          <h2 class="how-it-work__title title">Как это работает</h2>
+          <ul class="how-it-work__list">
+            <li class="how-it-work__item">
+              <p class="how-it-work__description how-it-work__description--substance">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="how-it-work__item">
+              <p class="how-it-work__description how-it-work__description--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="how-it-work__item">
+              <p class="how-it-work__description how-it-work__description--food">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+            </li>
+            <li class="how-it-work__item">
+              <p class="how-it-work__description how-it-work__description--enjoy">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            </li>
+          </ul>
+      </div>
       </section>
       <section class="live-example">
-        <h2 class="live-example__title title">Живой пример</h2>
-        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="facts">
-          <dt class="facts__result">5 кг</dt>
-            <dd class="facts__category">снижение веса</dd>
-          <dt class="facts__result">60 дней</dt>
-            <dd class="facts__category">затрачено времени</dd>
-        </dl>
-        <p class="live-example__food">Затраты на питание: 15 000 руб.</p>
-        <img class="live-example__cat" src="http://placehold.it/311x232" width="311" height="232" alt="Было-стало">
-        <span>Было</span>
-        <span>Стало</span>
+        <div class="live-example__data">
+          <h2 class="live-example__title title">Живой пример</h2>
+          <div class="live-example__information-wrapper">
+            <div class="live-example__information">
+              <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="live-example__wrapper">
+                <dl class="facts">
+                  <div class="facts__wrapper">
+                    <dt class="facts__result">5 кг</dt>
+                      <dd class="facts__category">снижение<br> веса</dd>
+                  </div>
+                  <div class="facts__wrapper">
+                    <dt class="facts__result">60 дней</dt>
+                      <dd class="facts__category">затрачено<br> времени</dd>
+                  </div>
+                </dl>
+                <p class="live-example__food">Затраты на питание: 15 000 руб.</p>
+              </div>
+            </div>
+            <div class="live-example__show">
+              <img class="live-example__cat" src="../img/before-mobile@1x.png" width="311" height="232" alt="Было-стало">
+              <div class="live-example__result">
+                <span>Было</span>
+                 <input type="range" id="result" name="result" min="1" max="3" step="1">
+                <span>Стало</span>
+              </div>
+          </div>
+        </div>
+      </div>
       </section>
       <section class="contacts">
         <div class="contacts__all-text">
-          <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8<br>
+          <p class="contacts__partnership">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <p class="contacts__text">ул. Большая<br> Конюшенная, д. 19/8<br>
           Санкт-Петербург</p>
         </div>
-        <img class="contacts__map" src="http://placehold.it/320x362">
+        <img class="contacts__map" src="http://placehold.it/320x362" width="320" height="362" alt="Наш адрес на карте">
       </section>
     </main>
 
@@ -100,14 +121,14 @@
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social_item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</spn></a>
             </li>
-            <li class="social_item">
-              <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy">Мы в Инстаграм</a>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграм</span></a>
             </li>
-            <li class="social_item">
-              <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy">Мы в Фейсбук</a>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбук</span></a>
             </li>
           </ul>
         </div>

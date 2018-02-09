@@ -36,6 +36,7 @@
   &__title {
     padding: 0;
     margin: 0;
+    margin-top: 40px;
     margin-bottom: 40px;
 
     color: $color-dark;
@@ -45,6 +46,7 @@
     line-height: 36px;
 
     &--main {
+      margin-top: 0;
       margin-bottom: 20px;
       padding-top: 29px;
 
@@ -55,12 +57,16 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 708px;
+    position: relative;
+
+    width: 768px;
     margin: 0 auto;
 
     &__title {
-      margin-bottom: 45px;
+      width: 708px;
+      margin: 0 auto;
       padding: 0;
+      margin-bottom: 90px;
 
       color: $color-dark;
       font-size: 60px;
@@ -69,6 +75,11 @@
     }
 
     &__description {
+      padding: 0;
+      margin: 0;
+      margin-left: 90px;
+      margin-bottom: 20px;
+
       font-size: 20px;
       line-height: 20px;
       color: $color-dark;
@@ -79,16 +90,28 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    &__select-program {
+      position: absolute;
+      top: 220px;
+
+      margin-left: 90px;
+    }
+
+    & .button {
+      @include button-tablet-index;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
 
     &__title {
-      margin-left: 83px;
+      width: 1220px;
+      margin: 0 auto;
       margin-bottom: 45px;
       padding: 0;
 
@@ -100,11 +123,19 @@
 
     &__description {
       margin-left: 83px;
+      margin-bottom: 54px;
 
       font-size: 20px;
       line-height: 20px;
       color: $color-dark;
       text-align: left;
+    }
+
+    &__select-program {
+      position: absolute;
+      top: 239px;
+
+      margin-left: 83px;
     }
   }
 }
