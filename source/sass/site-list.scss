@@ -24,7 +24,6 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-
     &__item:first-child {
       border-top: none;
     }
@@ -41,20 +40,19 @@
         padding-bottom: 0;
 
         letter-spacing: 0;
-        }
+      }
 
       &--active {
         padding-bottom: 12px;
 
         border-bottom: 2px solid $button-bg;
-        }
+      }
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-
     &__item {
       margin-left: 35px;
 

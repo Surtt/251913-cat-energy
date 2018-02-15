@@ -71,7 +71,6 @@
     border: none;
 
     &__link {
-
       &--vkontakte::before {
         top: -10px;
         left: 9px;
@@ -101,9 +100,7 @@
 
 @media (min-width: $desktop-width) {
   .social {
-
     &__link {
-
       &--vkontakte::before {
         top: -11px;
         left: 10px;

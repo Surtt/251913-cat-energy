@@ -36,13 +36,12 @@
     margin: 0 auto;
     width: 320px;
     height: 362px;
-    background-image: url(http://placehold.it/320x362);
+    background-image: url("http://placehold.it/320x362");
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-
     &__all-text {
       display: flex;
       justify-content: space-between;
@@ -70,19 +69,18 @@
     &__map {
       width: 768px;
       height: 394px;
-      background-image: url(http://placehold.it/809x394);
+      background-image: url("http://placehold.it/809x394");
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-      position: relative;
+    position: relative;
 
-      &--bg {
-        padding-top: 0;
-      }
+    &--bg {
+      padding-top: 0;
+    }
 
     &__all-text {
       position: absolute;
@@ -114,7 +112,7 @@
       margin: 0 auto;
       width: 1440px;
       height: 400px;
-      background-image: url(http://placehold.it/1440x400);
+      background-image: url("http://placehold.it/1440x400");
     }
   }
 }

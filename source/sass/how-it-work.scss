@@ -137,7 +137,8 @@
       }
     }
 
-    &__item:nth-last-child(1), &__item:nth-last-child(2) {
+    &__item:nth-last-child(1),
+    &__item:nth-last-child(2) {
       margin-bottom: 0;
     }
 
@@ -306,7 +307,8 @@
       }
     }
 
-    &__item:nth-last-child(1), &__item:nth-last-child(2) {
+    &__item:nth-last-child(1),
+    &__item:nth-last-child(2) {
       margin-left: 79px;
       margin-bottom: 0;
     }
