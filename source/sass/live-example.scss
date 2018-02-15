@@ -1,19 +1,24 @@
 .live-example {
-  padding-top: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
+  padding-top: 26px;
+  margin-bottom: 28px;
 
   background-color: $color-light-grey;
 
   &__title {
-    margin-bottom: 35px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  &__information {
+    width: 280px;
+    margin: 0 auto;
   }
 
   &__text {
     padding: 0;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 
     font-family: $font-base;
     font-size: 14px;
@@ -23,7 +28,7 @@
   &__food {
     padding: 0;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     font-size: 14px;
     line-height: 20px;
@@ -31,22 +36,60 @@
     text-align: center;
   }
 
-  &__cat {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 35px;
+  &__show-image-before {
+    margin-bottom: 40px;
+    width: 311px;
+    height: 232px;
+
+    background-image: url("../img/before-mobile@1x.png");
+    background-repeat: no-repeat;
   }
 
   &__result {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 40px;
+    align-items: center;
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 36px;
   }
 
-  & span {
+  &__before,
+  &__after {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+  }
+
+  &__before {
+    margin-left: 34px;
+  }
+
+  &__after {
+    margin-right: 30px;
+  }
+
+  &__how {
+    width: 84px;
+  }
+
+  &__range {
+    width: 84px;
+    height: 14px;
+
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 50px;
+  }
+
+  &__thumb {
+    margin-top: 4px;
+    margin-left: 5px;
+    width: 35px;
+    height: 6px;
+
+    background-color: $button-bg;
+    border-radius: 50px;
   }
 }
 
@@ -54,25 +97,30 @@
   .live-example {
     padding: 0;
     margin: 0;
-    width: 708px;
+    width: 768px;
     margin: 0 auto;
-    margin-bottom: 42px;
+    margin-bottom: 64px;
 
     background: #ffffff;
 
     &__title {
       padding: 0;
-      margin: 0;
-      margin-bottom: 75px;
+      margin: 0 auto;
+      margin-bottom: 64px;
+      width: 708px;
 
       font-size: 60px;
       line-height: 60px;
     }
 
+    &__information {
+      width: 708px;
+    }
+
     &__text {
       padding: 0;
       margin: 0;
-      margin-bottom: 60px;
+      margin-bottom: 53px;
 
       font-size: 16px;
       line-height: 24px;
@@ -81,7 +129,8 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 104px;
+      align-items: center;
+      margin-bottom: 223px;
     }
 
     &__food {
@@ -89,48 +138,175 @@
 
       text-align: right;
       font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__show {
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      &--before {
+        width: 384px;
+        height: 462px;
+        display: flex;
+        justify-content: flex-end;
+
+        background-color: #f2f2f2;
+      }
+
+      &--after {
+        width: 384px;
+        height: 462px;
+        display: flex;
+        justify-content: flex-start;
+
+        background-color: #eaeaea;
+      }
+    }
+
+    &__show-image-before {
+      margin-top: -170px;
+      width: 339px;
+      height: 517px;
+
+      background: none;
+      background-image: url("http://placehold.it/339x517");
+      background-repeat: no-repeat;
+    }
+
+    &__show-image-after {
+      margin-top: -170px;
+      width: 339px;
+      height: 517px;
+
+      background-image: url("http://placehold.it/339x517");
+      background-repeat: no-repeat;
+    }
+
+    &__result {
+      position: absolute;
+      bottom: 38px;
+      left: 64px;
+
+      width: auto;
+    }
+
+    &__before,
+    &__after {
+      font-size: 20px;
       line-height: 20px;
+      text-transform: uppercase;
+
+      border-bottom: 1px dotted #bebebe;
     }
 
-    &__cat {
-      width: 677px;
-      height: 499px;
+    &__before {
+      margin-right: 22px;
     }
 
-    &__result input {
+    &__after {
+      margin-left: 23px;
+    }
+
+    &__range {
+      position: relative;
+
       width: 428px;
+      height: 6px;
+
+      border: none;
+      background-color: #dbdcdb;
+    }
+
+    &__thumb {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+
+      margin-left: -14px;
+      width: 32px;
+      height: 32px;
+
+      background-color: #ffffff;
+      border: 1px solid #cdcdcd;
+      box-shadow: 0px 2px 7px -2px;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 12px;
+        left: 50%;
+
+        margin-left: -4px;
+        width: 8px;
+        height: 8px;
+
+        background-color: $button-bg;
+        border-radius: 50px;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .live-example {
-    width: 100%;
+    width: 1440px;
+    margin-bottom: 0;
+
+    &__title {
+      width: 1220px;
+      margin-bottom: 75px;
+    }
 
     &__data {
-      width: 1220px;
       margin: 0 auto;
     }
 
     &__information-wrapper {
       display: flex;
       justify-content: space-between;
+
+      background-color: #f2f2f2;
     }
 
     &__information {
-      width: 470px;
+      width: 439px;
+      padding-top: 71px;
     }
 
     &__text {
-      margin-bottom: 75px;
+      margin-bottom: 68px;
     }
 
     &__wrapper {
       flex-wrap: wrap;
+      margin-bottom: 0;
     }
 
     &__food {
       width: auto;
+
+      & span {
+        margin-left: 58px;
+      }
+    }
+
+    &__show {
+
+      &--after {
+        width: 395px;
+      }
+    }
+
+    &__show-image-before {
+      margin-top: -190px;
+    }
+
+    &__show-image-after {
+      margin-top: -190px;
     }
   }
 }

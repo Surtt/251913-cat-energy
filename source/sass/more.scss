@@ -8,18 +8,22 @@
 
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
 
+    & br {
+      display: none;
+    }
+
     &::before {
       content: "";
 
       position: absolute;
-      top: -50px;
+      top: -53px;
       left: 50%;
 
       margin-left: -15px;
@@ -31,12 +35,16 @@
     }
 
     &--small {
-      margin-bottom: 25px;
+      margin-bottom: 21px;
 
       font-family: $font-base;
       font-size: 12px;
       line-height: 16px;
       text-align: center;
+
+      & br {
+        display: none;
+      }
     }
   }
 
@@ -44,7 +52,7 @@
     display: flex;
     flex-direction: column;
     width: 280px;
-    margin-top: 75px;
+    margin-top: 79px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 24px;
@@ -59,22 +67,50 @@
     border: 1px solid #ededed;
 
     &__text {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
 
       font-size: 20px;
       line-height: 20px;
 
+      &::before {
+        top: -111px;
+        left: 50%;
+
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+      }
+
       &--small {
-        padding-bottom: 90px;
+        padding-bottom: 77px;
+        margin-bottom: 6px;
 
         font-size: 16px;
         line-height: 20px;
+
+        & br {
+          display: block;
+        }
+      }
+
+      & br {
+        display: block;
       }
     }
 
     &__wrapper {
       align-items: center;
-      margin-top: 168px;
+      margin-top: 164px;
+      margin-left: 22px;
+    }
+
+    & .button {
+      padding: 0;
+      width: 249px;
+      height: 40px;
+
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }
@@ -86,7 +122,12 @@
     &__wrapper {
       width: 169px;
       margin: 0 auto;
-      margin-top: 168px;
+      margin-top: 163px;
+    }
+
+    & .button {
+      width: 169px;
+      height: 40px;
     }
   }
 }

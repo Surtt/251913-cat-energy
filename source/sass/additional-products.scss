@@ -1,24 +1,33 @@
 .additional-products {
   margin: 0;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 37px;
+  margin-top: 42px;
+
+  border-top: 3px solid $button-bg;
 
   &__amount {
+    padding: 0;
+    margin: 0;
+
     font-family: $font-base;
     font-size: 14px;
     line-height: 14px;
   }
 
   &__item {
+    width: 280px;
+    margin: 0 auto;
     padding-bottom: 17px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     border-bottom: 1px solid #cdcdcd;
 
-    &:nth-child(2) {
-      padding-top: 15px;
+    & .button {
+      letter-spacing: 0;
+    }
+
+    &:nth-child(1) {
+      padding-top: 13px;
 
       border-top: 1px solid #cdcdcd;
     }
@@ -27,7 +36,7 @@
   &__name {
     padding: 0;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
 
     font-size: 16px;
     line-height: 16px;
@@ -35,6 +44,9 @@
   }
 
   &__price {
+    padding: 0;
+    margin: 0;
+
     font-family: $font-base;
     font-size: 14px;
     line-height: 14px;
@@ -45,71 +57,42 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
+
+    border-collapse: collapse;
   }
 
   &__title {
-    position: relative;
-
     padding: 0;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
+    margin-top: -16px;
+    padding-left: 19px;
+    margin-right: 53px;
 
+    font-weight: normal;
     font-size: 24px;
     line-height: 24px;
 
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 50%;
-
-      width: 53px;
-      height: 3px;
-      margin-left: 24px;
-
-      background-color: $button-bg;
-    }
+    background-color: #ffffff;
   }
 }
 
 @media (min-width: $tablet-width) {
   .additional-products {
-    width: 708px;
-    margin-bottom: 70px;
+    width: 768px;
+    margin-top: 89px;
+    margin-bottom: 69px;
 
     &__title {
-      margin-left: 50px;
-      margin-bottom: 80px;
+      margin-left: 28px;
+      margin-bottom: 92px;
+      margin-top: -25px;
+      margin-right: 327px;
+      padding-left: 39px;
 
       font-size: 36px;
       line-height: 36px;
-
-      &::before {
-        content: "";
-
-        position: absolute;
-        top: 50%;
-
-        width: 28px;
-        height: 3px;
-        margin-left: -70px;
-
-        background-color: $button-bg;
-      }
-
-      &::after {
-        content: "";
-
-        position: absolute;
-        top: 50%;
-
-        width: 320px;
-        height: 3px;
-        margin-left: 40px;
-
-        background-color: $button-bg;
-      }
     }
 
     &__item {
@@ -117,10 +100,11 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding-top: 26px;
-      padding-bottom: 26px;
-      padding-left: 36px;
+      padding-bottom: 27px;
+      padding-left: 38px;
       padding-right: 36px;
       margin-bottom: 0;
+      width: 633px;
 
       border: 1px solid #cdcdcd;
       border-bottom: none;
@@ -135,15 +119,23 @@
 
       & .button {
         width: 100%;
+        height: 40px;
+        font-size: 16px;
+        line-height: 16px;
       }
     }
 
     &__name {
+      margin-bottom: 25px;
+
       font-size: 20px;
       line-height: 20px;
     }
 
     &__properties {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
       width: 50%;
     }
 
@@ -154,6 +146,8 @@
     }
 
     &__price {
+      width: 95px;
+
       font-size: 16px;
       line-height: 20px;
     }
@@ -162,6 +156,67 @@
 
 @media (min-width: $desktop-width) {
   .additional-products {
-    width: 1220px;
+    width: 1440px;
+    margin-top: 97px;
+    margin-bottom: 86px;
+
+    &__wrapper {
+      display: flex;
+      width: 1220px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin-left: 70px;
+      margin-right: 957px;
+      margin-bottom: 80px;
+    }
+
+    &__item {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-top: 16px;
+      padding-bottom: 15px;
+      width: 895px;
+
+      border-left: none;
+      border-right: none;
+
+      &:nth-child(1) {
+        padding-top: 16px;
+      }
+
+      &:nth-child(2) {
+        padding-top: 16px;
+      }
+    }
+
+    &__name {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    &__properties {
+      margin-bottom: 0;
+      margin-top: 5px;
+      margin-right: 38px;
+      width: 287px;
+
+      & tbody {
+        width: 100%;
+      }
+
+      & tr {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    & .button {
+      width: 245px;
+    }
   }
 }

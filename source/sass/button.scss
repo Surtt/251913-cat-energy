@@ -1,4 +1,5 @@
 .button {
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +12,7 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: -1px;
 
   background-color: $button-bg;
   border: none;
@@ -27,6 +29,8 @@
   &--all {
     color: $color-text;
 
+    letter-spacing: 0;
+
     background-color: #f1f1f1;
 
     &:hover {
@@ -38,6 +42,24 @@
     &:active {
       background-color: #ebebeb;
       color: $button-color-grey;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 245px;
+    height: 52px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    &--send-form {
+      padding: 0;
+      margin: 0;
+      width: 283px;
+      height: 52px;
     }
   }
 }

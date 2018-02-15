@@ -1,4 +1,12 @@
 .container {
+
+  &__main-page {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-size: 320px 305px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
   &__description {
     padding: 0;
     margin: 0;
@@ -11,9 +19,14 @@
     text-align: center;
   }
 
+  &__text {
+    margin-top: -6px;
+  }
+
   &__example-product {
     display: block;
     margin: 0 auto;
+    margin-bottom: 2px;
   }
 
   &__select-program {
@@ -35,22 +48,23 @@
 
   &__title {
     padding: 0;
-    margin: 0;
-    margin-top: 40px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 28px;
     margin-bottom: 40px;
 
     color: $color-dark;
     font-size: 36px;
     font-weight: normal;
-    text-align: center;
     line-height: 36px;
 
     &--main {
       margin-top: 0;
-      margin-bottom: 20px;
-      padding-top: 29px;
+      margin-bottom: 23px;
+      padding-top: 27px;
 
       color: #ffffff;
+      text-align: center;
     }
   }
 }
@@ -62,22 +76,41 @@
     width: 768px;
     margin: 0 auto;
 
+    &__main-page {
+      background: none;
+    }
+
+    &__example-product {
+      width: 709px;
+      height: 609px;
+    }
+
     &__title {
       width: 708px;
-      margin: 0 auto;
       padding: 0;
-      margin-bottom: 90px;
+      margin: 0 auto;
+      margin-bottom: 164px;
 
       color: $color-dark;
       font-size: 60px;
       line-height: 60px;
-      text-align: left;
+
+      &--main {
+        width: auto;
+        margin-left: 117px;
+        margin-bottom: 40px;
+        text-align: left;
+      }
+
+      &--form {
+        margin-bottom: 61px;
+      }
     }
 
     &__description {
       padding: 0;
       margin: 0;
-      margin-left: 90px;
+      margin-left: 117px;
       margin-bottom: 20px;
 
       font-size: 20px;
@@ -87,19 +120,18 @@
     }
 
     &__text {
+      margin-left: 70px;
+      margin-bottom: 64px;
+
       font-size: 20px;
       line-height: 30px;
     }
 
     &__select-program {
       position: absolute;
-      top: 220px;
+      top: 224px;
 
-      margin-left: 90px;
-    }
-
-    & .button {
-      @include button-tablet-index;
+      margin-left: 117px;
     }
   }
 }
@@ -109,20 +141,64 @@
     width: 100%;
     margin: 0 auto;
 
+    &__image-main {
+      position: absolute;
+      top: -223px;
+      right: 0;
+
+      width: 680px;
+      height: 696px;
+
+      background-image: url(http://placehold.it/680x696);
+      background-size: 680px 696px;
+      background-repeat: no-repeat;
+      background-position: top right;
+
+      z-index: -1;
+    }
+
+    &__main-page {
+      margin-top: 93px;
+    }
+
+    &__example-product {
+      position: absolute;
+      top: -80px;
+      right: 327px;
+
+      width: 552px;
+      height: 499px;
+    }
+
     &__title {
       width: 1220px;
       margin: 0 auto;
-      margin-bottom: 45px;
+      margin-bottom: 165px;
       padding: 0;
 
       color: $color-dark;
       font-size: 60px;
       line-height: 60px;
       text-align: left;
+
+      &--main {
+        margin-left: 190px;
+        margin-bottom: 41px;
+      }
+
+      &--form {
+        margin-bottom: 55px;
+      }
+    }
+
+    &__text {
+      width: 1220px;
+      margin: 0 auto;
+      margin-bottom: 66px;
     }
 
     &__description {
-      margin-left: 83px;
+      margin-left: 190px;
       margin-bottom: 54px;
 
       font-size: 20px;
@@ -133,9 +209,9 @@
 
     &__select-program {
       position: absolute;
-      top: 239px;
+      top: 234px;
 
-      margin-left: 83px;
+      margin-left: 189px;
     }
   }
 }

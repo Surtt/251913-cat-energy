@@ -12,3 +12,9 @@
     background-image: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-page {
+    margin-top: 93px;
+  }
+}

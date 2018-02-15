@@ -2,7 +2,7 @@
   &__all-text {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
     display: flex;
   }
 
@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     flex-shrink: 2;
-    margin-right: 20px;
+    margin-right: 18px;
 
     font-size: 16px;
     line-height: 20px;
@@ -31,6 +31,13 @@
 
     background-color: $color-light-grey;
   }
+
+  &__map {
+    margin: 0 auto;
+    width: 320px;
+    height: 362px;
+    background-image: url(http://placehold.it/320x362);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,6 +46,7 @@
     &__all-text {
       display: flex;
       justify-content: space-between;
+      padding: 0;
       margin-left: 72px;
       margin-right: 72px;
       margin-bottom: 63px;
@@ -56,7 +64,13 @@
     }
 
     &--bg {
-      padding-top: 70px;
+      padding-top: 64px;
+    }
+
+    &__map {
+      width: 768px;
+      height: 394px;
+      background-image: url(http://placehold.it/809x394);
     }
   }
 
@@ -66,6 +80,10 @@
   .contacts {
       position: relative;
 
+      &--bg {
+        padding-top: 0;
+      }
+
     &__all-text {
       position: absolute;
       top: 95px;
@@ -73,8 +91,8 @@
 
       padding: 0;
       margin: 0;
-      padding-top: 70px;
-      padding-bottom: 65px;
+      padding-top: 65px;
+      padding-bottom: 58px;
       padding-left: 77px;
       justify-content: start;
       width: 493px;
@@ -85,7 +103,7 @@
     }
 
     &__partnership {
-      margin-right: 97px;
+      margin-right: 96px;
     }
 
     &__text {
@@ -93,8 +111,10 @@
     }
 
     &__map {
-      width: 100%;
+      margin: 0 auto;
+      width: 1440px;
       height: 400px;
+      background-image: url(http://placehold.it/1440x400);
     }
   }
 }
